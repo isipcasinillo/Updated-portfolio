@@ -1,0 +1,326 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    background-color: #212c50;
+    position: relative;
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    height: 140vh;
+}
+/* --------------------------------------------- */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.logo {
+    position:relative;
+    font-family: 'Montserrat', sans-serif;
+    right: 80px;
+    color:white;
+}
+.nav-links ul {
+    position: relative;
+    left: 80px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+
+}
+
+
+.nav-links li {
+    display: inline-block;
+    text-decoration-style: none;
+    
+    
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding-right: 0px;
+    
+}
+
+/* --------------------------------------------- */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-top: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    width: 800px;
+    height: 330px;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0px 0px 10px 0px rgba(48, 43, 53, 0.267);
+    border-radius: 8px;
+
+}
+
+.hero h1 {
+    position: relative;
+    right: 50px;
+    font-size: 150px;
+    font-family: monospace;
+}
+
+.hero span {
+    position: relative;
+    right: 0px;
+    font-size: 100px;
+    font-family: monospace;
+
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    } 50% {
+        opacity: 0;
+    } 100% {
+        opcaity:1;
+    }
+}
+.blink {
+    animation: blink 1s steps(1, end)
+    infinite;
+}
+/* --------------------------------------------- */
+.about {
+    padding-top: 50px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin-top: 20px;
+    position: relative;
+    width: 800px;
+    height: 630px;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0px 0px 10px 0px rgba(48, 43, 53, 0.431);
+    border-radius: 8px;
+}
+.about p {
+    position: relative;
+    top: -20px;
+    padding: 10px 60px 30px 60px;
+    text-align: justify;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.portrait {
+    position: relative;
+    top: -80px;
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+}
+
+.about h1 {
+    font-size: 40px;
+    position:relative;
+    top: -40px;
+}
+/* --------------------------------------------- */
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.card-1 {
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+    width: 800px;
+    height: 330px;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0px 0px 10px 0px rgba(48, 43, 53, 0.267);
+    border-radius: 8px;
+}
+
+.card-1:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 100px 0px rgba(48, 43, 53, 0.767);
+}
+.card-left{
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+#img-1 {
+    width: 300px;
+    height: 285px;
+}
+.img-1 {
+    width: 300px;
+    height: 285px;
+}
+.card-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.paragraph-1-h1{
+    font-size: 50px;
+    position: relative;
+    left: 0px;
+
+}
+.paragraph-1-container{
+    position: relative;
+    top: -20px;
+    left: 0px;
+    
+} 
+.paragraph-1 {
+    margin: 10 10px 10px 5px;
+    color: rgba(51, 43, 56, 0.856);
+    text-align: justify;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.skill-container {
+   position: relative;
+   top: -25px;
+   padding-left: 5px;
+}
+
+.skill-container span {
+    font-size: 10px;
+    font-family:  sans-serif;
+    background-color: rgba(0, 128, 128, 0);
+    padding: 5px 10px 5px 10px;
+    border: 1.5px solid rgb(105, 105, 230);
+    border-radius: 6px;
+    color: rgb(49, 20, 70);
+}
+.button-1 {
+    border-style: none;
+    color: white;
+    position: relative;
+    top: -20px;
+    left: 5px;
+    background-color:rgb(158, 159, 223);
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px 1px rgba(48, 43, 53, 0.267);
+}
+
+.button-1-2 {
+    border-style: none;
+    position: relative;
+    top: -20px;
+    left: 7px;
+    background-color:rgba(255, 255, 255, 0);
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px 1px rgba(48, 43, 53, 0.267);
+}
+
+
+
+
+/* --------------------------------------------- */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 800px;
+    height: 150px;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0px 0px 10px 0px rgba(48, 43, 53, 0.267);
+    border-radius: 8px;
+    background-color: rgb(59, 58, 58);
+}
+
+.footer-container-1{
+    position: relative;
+    padding-left: 70px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-container-1 ul li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.site-links ul {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+.link-links ul {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.footer-container-1 ul {
+    list-style-type: none;
+}
+.footer-container-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    width: 500px;
+ 
+}
+.footer-container-2 div *  {
+    margin: 5px;
+    color: white;
+}
+
+.footer-container-2 .contact-name input {
+    color:black;
+}
+.contact-input {
+display: flex;
+flex-direction: column;
+}
+
+.contact-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.bio {
+    text-align: center;
+}
+/* --------------------------------------------- */
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+      display: flex;
+      background-color: lightblue;
+    }
+  
+  }
